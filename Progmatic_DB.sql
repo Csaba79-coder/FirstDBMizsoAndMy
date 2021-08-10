@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS Members (
     name VARCHAR(50) NOT NULL,
     state ENUM ('student', 'teacher', 'staff', 'unknown') DEFAULT 'unknown',
     email VARCHAR(50) NOT NULL ,
+    profil_picture LONGBLOB,
+    reg_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(ID)
 );
 
